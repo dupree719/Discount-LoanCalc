@@ -1,0 +1,36 @@
+
+
+    <h1>Discount Calculator</h1>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              <!-- <label for="inputStartPrice">Price</label> -->
+              <input type="number" [(ngModel)]="price" name="price" >
+            </div>
+            <div class="form-group">
+              <!-- <label for="inputDiscount">Discount</label> -->
+              <input type="number" [(ngModel)]="discount" name="discount">
+            </div>
+            <button type="button" class="btn btn-success" (click)="discountCalc()">Calculate</button>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h4>Your price after discount: {{priceAfterDiscount}}</h4>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+    
+  
+    
+  
+  <router-outlet></router-outlet>

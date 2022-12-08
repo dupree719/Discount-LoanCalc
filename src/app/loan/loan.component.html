@@ -1,0 +1,38 @@
+
+
+    <h1>Loan Calculator</h1>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              
+              <input type="number" [(ngModel)]="amount" name="amount" >
+            </div>
+            <div class="form-group">
+              
+              <input type="number" [(ngModel)]="rate" name="rate">
+              <input type="number" [(ngModel)]="months" name="months">
+             
+            </div>
+            <button type="button" class="btn btn-success" (click)="loanCalc()">Calculate</button>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h4>Your monthly payment: {{monthlyPayment}}</h4>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+    
+  
+    
+  
+  <router-outlet></router-outlet>
